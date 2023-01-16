@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>salesboard-project-1</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="dark-mode-toggle-container">
+          <div class="toggle" id="dark-mode-btn"></div>
+        </div>
+        <header>
+          <h1>Salesboard 🔔</h1>
+          <div class="profile-img-container">
+            <div class="profile-img"></div>
+          </div>
+        </header>
+        <div class="sales-input-buttons-container">
+          <button class="btn icon-1" id="star">⭐️</button>
+          <button class="btn icon-2" id="flame">🔥</button>
+        </div>
+        <div class="live-sales-container">
+          <h2 id="sales-counter">Live Sales - 0</h2>
+          <div class="output sales" id="sales-output"></div>
+        </div>
+        <div class="live-achievements-container">
+          <h2 id="achievements-counter">Live Achievements - 0</h2>
+          <div class="output achievements" id="achievement-output"></div>
+        </div>
+        <div class="financial-results-container">
+          <div>
+            <h2>Total Revenue</h2>
+            <div class="output rev" id="total-rev-output">$</div>
+          </div>
+          <div>
+            <h2>Total Commision</h2>
+            <div class="output com" id="total-com-output">$</div>
+          </div>
+        </div>
+        <div class="reset-btn-container">
+          <button class="resetBtn" id="reset">RESET</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

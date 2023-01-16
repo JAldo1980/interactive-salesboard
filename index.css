@@ -1,0 +1,225 @@
+/* ********************************* */
+/* UNIVERSAL DECLARATIONS/PROPERTIES */
+/* ********************************* */
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.875rem; /* 30px */
+  overflow: hidden;
+}
+
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* colours */
+
+:root {
+  --page-background: #201a23;
+  --buttons: #9e4770;
+  --buttons-hover: #ae6688;
+  --data-output-containers: #44354a;
+  --text: #fff;
+}
+
+/* ************** */
+/* ELEMENT STYING */
+/* ************** */
+
+/* wrapper */
+
+.wrapper {
+  background-color: var(--page-background);
+  height: 100vh;
+  color: var(--text);
+  transition: 0.4s;
+}
+
+/* toggle btn (dark mode) */
+.toggle {
+  background-image: url(/images/light-mode-removebg-preview.png);
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  margin-right: 0em;
+  font-size: 1.3rem;
+  transition: 0.4s;
+  cursor: pointer;
+}
+/* dark mode BUTTON toggle active status */
+.active {
+  background-image: url(/images/dark-mode-removebg-preview.png);
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  margin-right: 0em;
+  font-size: 1.3rem;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+/* active page dark mode toggle parameters */
+.page-active {
+  background-color: white;
+  color: black;
+  transition: 0.4s;
+}
+
+/* container */
+
+.container {
+  margin: 0 auto;
+  padding: 0.5em;
+  max-width: 800px;
+}
+
+/* header */
+
+header {
+  margin-top: 0.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+
+header h1 {
+  font-size: 1.2rem;
+}
+
+.profile-img-container {
+  text-align: center;
+}
+
+.profile-img {
+  background-image: url("/images/brent-profile-img.png");
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+  border: 6px solid #44354a;
+}
+
+.profile-img:hover {
+  background-image: url("https://media.giphy.com/media/u3dsD4786aaVW/giphy.gif");
+  background-size: cover;
+  transition: 0.2s;
+  width: 150px;
+  height: 150px;
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+  border: 6px solid #fefe4c;
+  cursor: pointer;
+}
+
+/* sales-input-buttons-container */
+
+.sales-input-buttons-container {
+  margin-top: 0.1em;
+  text-align: center;
+}
+
+.btn {
+  background-color: var(--buttons);
+  padding: 0.2em 1.5em;
+  border: 2px solid var(--buttons-hover);
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn:active {
+  border: 2px solid #fefe4c;
+}
+
+.btn:hover {
+  background-color: var(--buttons-hover);
+  transition: 0.3s;
+}
+
+/* live-sales-container */
+
+.live-sales-container h2,
+.live-achievements-container h2,
+.financial-results-container h2 {
+  text-align: center;
+  margin-top: 1em;
+  font-size: 0.7rem;
+}
+
+.output {
+  margin-top: 0.1em;
+  background-color: var(--data-output-containers);
+  min-height: 57px;
+  max-width: 805px;
+  border-radius: 50px;
+  padding: 0.5em 0.7em;
+}
+
+.achievements {
+  text-align: center;
+}
+
+.achievements,
+.sales {
+  font-size: 0.7rem;
+}
+
+.rev,
+.com {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+/* live-achievements-container */
+
+/* financial-results-container */
+
+.financial-results-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 0.2em;
+}
+
+.financial-results-container h2 {
+  font-size: 0.7rem;
+  margin-bottom: 0.2em;
+}
+
+.financial-results-container div {
+  margin: 0;
+  width: 100%;
+}
+
+/* RESET BUTTON */
+
+.reset-btn-container {
+  margin-top: 1em;
+  display: flex;
+}
+
+.resetBtn {
+  font-size: 0.7rem;
+  padding: 0.2em 1em;
+  border-radius: 50px;
+  border: none;
+  background-color: darkred;
+  color: var(--text);
+}
+
+.resetBtn:hover {
+  background-color: red;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.resetBtn:active {
+  border: 1px solid var(--text);
+}
